@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Server</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism-tomorrow.css" rel="stylesheet"/>
+</head>
+<header>
+  <div id="top-bar">
+  <div id="app-title">Home Server Manager</div>
+
+  <div id="user-menu">
+    <div id="user-icon">👤</div>
+
+    <div id="user-dropdown">
+      <p id="user-name"></p>
+      <p id="user-email"></p>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+</div>
+</header>
+<body>
+  <!--<h1>Home Server File Manager</h1>
+
+  <!-- Upload Section -->
+  <section id="upload-section">
+    <input type="file" id="file-input" multiple>
+    <button id="upload-btn">Upload Files</button>
+  </section>
+
+  <!-- Files Display -->
+  <section id="files-section">
+    <h2>Files</h2>
+    <div id="files-container"></div>
+  </section>
+
+  <!-- Preview Modal -->
+  <div id="preview-modal" style="display:none;">
+    <span id="close-modal">&times;</span>
+    <div id="preview-content"></div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-c.min.js"></script>
+</body>
+</html>

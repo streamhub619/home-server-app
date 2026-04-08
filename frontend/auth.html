@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Auth</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+<div class="container">
+  
+  <!-- LOGIN -->
+  <div id="login-form">
+    <h2>Login</h2>
+    <input type="email" id="login-email" placeholder="Email">
+    <input type="password" id="login-password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <div class="toggle" onclick="toggleForms()">Don't have an account? Sign up</div>
+    <div id="login-msg" class="message"></div>
+  </div>
+
+  <!-- SIGNUP -->
+  <div id="signup-form" class="hidden">
+    <h2>Sign Up</h2>
+    <input type="text" id="signup-username" placeholder="Username">
+    <input type="email" id="signup-email" placeholder="Email">
+    <input type="password" id="signup-password" placeholder="Password">
+    <button onclick="signup()">Sign Up</button>
+    <div class="toggle" onclick="toggleForms()">Already have an account? Login</div>
+    <div id="signup-msg" class="message"></div>
+  </div>
+
+</div>
+
+<script src="auth.js"></script>
+<!--<script src="app.js"></script>-->
+
+</body>
+</html>
